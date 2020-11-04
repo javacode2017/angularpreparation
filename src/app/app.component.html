@@ -21,5 +21,15 @@
   <ng-template #showThenMsg>Show Then Message</ng-template>
   <ng-template #showElseMessage>Show Else Message</ng-template>
 
+  <h3>Switch Example</h3>
+  <div [ngSwitch]="switchValue">
+      <div *ngSwitchCase="1">value passed:1</div>
+      <div *ngSwitchCase="2">value passed:2</div>
+      <div *ngSwitchCase="3">value passed:3</div>
+      <div *ngSwitchDefault>value is :0
+     
+
+  </div>
+
 
 <router-outlet></router-outlet>

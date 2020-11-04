@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'basicangular';
   showMsg = false;
+  switchValue = 10; 
+
+  users = [
+    { id : 1, name : "java"},
+    { id : 2, name : "android"},
+    { id : 3, name : "angular"}
+
+  ];
 }
