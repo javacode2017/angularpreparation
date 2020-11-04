@@ -1,4 +1,6 @@
 <p>Welcome</p>
+
+<h2>angukar with adding material design</h2>
 <p class="bg-primary">Welllllllllllll</p>
 <button mat-button> Primary</button>
 
@@ -7,11 +9,14 @@
 <button mat-button color="warn">Warn</button>
 <button mat-button disabled>Disabled</button>
 
+<br>/
+<br/>
+<h2>ngIf , else , then else example</h2>
 <!-- *ngIf
   <div *ngIf=showMsg>Show Message</div>
 -->
 <br>
-
+  
   <!--*ngIf else
     <div *ngIf="showMsg; else showelseMessage">show Value</div>
     <ng-template #showelseMessage>Show else Message</ng-template>
@@ -21,15 +26,31 @@
   <ng-template #showThenMsg>Show Then Message</ng-template>
   <ng-template #showElseMessage>Show Else Message</ng-template>
 
-  <h3>Switch Example</h3>
+  <h2>Switch Example</h2>
   <div [ngSwitch]="switchValue">
       <div *ngSwitchCase="1">value passed:1</div>
       <div *ngSwitchCase="2">value passed:2</div>
       <div *ngSwitchCase="3">value passed:3</div>
-      <div *ngSwitchDefault>value is :0
-     
+      <div *ngSwitchDefault>value is :0</div>
+  </div>
+
+
+  <h2>ngFor Example</h2>
+  <div class="table">
+    <tr><th>ID</th><th>Name</th><th>index</th><th>First</th><th>Last</th><th>Even</th><th>Odd</th></tr>
+    <tr *ngFor="let ele of users; index as i; first as f;last as l;even as e;odd as o">
+      
+      <td>{{ele.id}}</td>
+      <td>{{ele.name}}</td>
+      <td>{{ i }}</td>
+      <td>{{ f }}</td>
+      <td>{{ l }}</td>
+      <td>{{ e }}</td>
+      <td>{{ o }}</td>
+    </tr>
 
   </div>
+
 
 
 <router-outlet></router-outlet>
