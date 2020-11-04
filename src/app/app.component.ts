@@ -9,6 +9,9 @@ export class AppComponent {
   title = 'basicangular';
   showMsg = false;
   switchValue = 10; 
+  colorvalue= 'green';
+  classname = 'two';
+  classname1 = 'three';
 
   users = [
     { id : 1, name : "java"},

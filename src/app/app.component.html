@@ -51,6 +51,17 @@
 
   </div>
 
+  <h2>ngStyle Example</h2>
+  <div [ngStyle]="{'color':'red'}">Angular ngStyle Example</div>
+  <a [ngStyle]="{'color': colorvalue, 'background-color': 'red'}" href="#">click here</a>
+
+  <h2>ngClass Example</h2>
+  <div [ngClass]="'one'"><h2>ngClass is a directive used for set the class name for the DOM Elements</h2></div>
+  <div [ngClass]="[classname,classname1]">adding more than one ngClass for one property</div>
+    <div [ngClass]="['a','b']">angular directives end</div>
+
+
+
 
 
 <router-outlet></router-outlet>
