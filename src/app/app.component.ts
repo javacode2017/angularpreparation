@@ -22,11 +22,13 @@ export class AppComponent {
 
   propertybind = 'Property Binding will be used for adding data to ngStyles and innerHTML';
 
+  fullName: string = " ";    
+
   showAlert(id){
     alert('event binding example...' + id);
   }
 
-  firstname='';
+  
 
 
 }
