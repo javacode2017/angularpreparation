@@ -58,7 +58,22 @@
   <h2>ngClass Example</h2>
   <div [ngClass]="'one'"><h2>ngClass is a directive used for set the class name for the DOM Elements</h2></div>
   <div [ngClass]="[classname,classname1]">adding more than one ngClass for one property</div>
-    <div [ngClass]="['a','b']">angular directives end</div>
+  <div [ngClass]="['a','b']">angular directives end</div>
+
+  <p [innerHTML]= 'propertybind'></p>
+  <div [ngClass]="'pb'"><h2>property binding with ngClass</h2></div>
+
+  <br/><br/>
+  <div><h2>Event Binding Example</h2></div>
+  <button (click)="showAlert(10);">Click me</button>
+
+  <h3>Two way Databinding</h3>
+
+  <input [(ngModel)] = "firstname" />
+
+  <div>{{ firstname }}</div>
+
+
 
 
 

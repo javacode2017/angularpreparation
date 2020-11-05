@@ -19,4 +19,14 @@ export class AppComponent {
     { id : 3, name : "angular"}
 
   ];
+
+  propertybind = 'Property Binding will be used for adding data to ngStyles and innerHTML';
+
+  showAlert(id){
+    alert('event binding example...' + id);
+  }
+
+  firstname='';
+
+
 }
